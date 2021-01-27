@@ -1,0 +1,68 @@
+
+TestNG Class 05
+HRMS class 01
+January 9, 2020
+
+Constants = final, and cannot be changed
+
+for testers it used
+1. create a project structure test.java --> java related code\test/resources -> resouces we used to test
+
+2. manage project dependiencies
+
+POM is design pattern
+
+US 8787: admin user should be able to login into HRMS.
+
+Maven is build automation tool.
+TestNG = testing tool.
+POM = design pattern to manage/maintain page object elements.
+We add dependencies POM.xml = xml file has its own tag. It serves as a configuration file.
+we added
+selenium
+testng
+common-io
+apache poi
+
+We take these dependencies from Maven repository. Repository is central repository,
+it is centralized and everybody has an access.
+How we implement our page object model: with page factory and @Find by annotations.
+
+Utility folders, what we have in it = common methods,
+in common methods we are creating re-usable methods and functions that deal with our webapplication.
+we have configs.reader = we develop functions that specifially work with our property file.
+Constants = we specify constants variables.
+
+US 987987 admin user should be able to add an employee to the hrms application
+
+Acceptance Criteria
+
+1. When user enters valid/invalid username and invalid/valid password then display "Invalid credentials"
+2. When user leaves password passwrod file empty then display "Password cannot be empty"
+3. When user leaves username filed empty then display "Username cannot be empty"
+
+What is DataProvider = it is annotaed method that returns an object of 2 dimensional array.
+
+HOW TO GET ENTIRE DATA FROM EXCEL FILE:
+
+1. FileInputStream (path to the file)
+2. Object of XSSFWorkbook (fis)
+3. getSheet(name or index);
+4. get number of rows getPhysicalNumberOfRows()
+5. get number of rows getPhysicalNumberOfCell()
+6. create 2 nested for loop
+    outer loop -- > control rows
+    inner lop --> control cols
+
+7. getRow(index).getCell(index).toString();
+
+List Collection is ordered collection
+ArrayLlist = is good for retrieving values, is best for accessing elements inside the collection.
+LinkedList = is good choice to add, to delete, is better for manipulation with data for adding and deleting.
+
+to get rows we loop and we start from index 1, because 0 is our key
+
+
+
+
+
