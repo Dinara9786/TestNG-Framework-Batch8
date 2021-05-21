@@ -42,6 +42,7 @@ public class AddEmployeePage extends CommonMethods {
     public WebElement rePassword;
 
     public AddEmployeePage(WebDriver driver) {
+
         PageFactory.initElements(driver, this);
     }
 }

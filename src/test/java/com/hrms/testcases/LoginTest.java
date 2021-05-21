@@ -21,7 +21,7 @@ public class LoginTest extends CommonMethods {
         click(login.loginBtn);
         //validation
         DashboardPage dashboardPage = new DashboardPage();
-        Assert.assertTrue(dashboardPage.welcomeMessage.isDisplayed(), "Welcome message is NOT dispalyed");
+        Assert.assertTrue(dashboardPage.welcomeMessage.isDisplayed(), "Welcome message is NOT displayed");
     }
 
     @Test(dataProvider = "invalidData", groups = "regression")

@@ -61,7 +61,7 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>smoke.xml</suiteXmlFile>
+                        <suiteXmlFile>regression.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
